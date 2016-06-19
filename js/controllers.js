@@ -70,12 +70,9 @@ angular.module('app.controllers', [])
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
-
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -126,16 +123,12 @@ console.log(response);
             if (status.trim() == 'success!') {
                 $state.go('menu.requests');
                 showAlert(status, message);
-
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
-
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -191,12 +184,10 @@ console.log(response);
             }
             if (status == 'danger!') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
 
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -241,7 +232,7 @@ console.log(response);
             }
 
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -286,7 +277,7 @@ console.log(response);
             }
 
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -357,7 +348,7 @@ console.log(response);
 
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -401,12 +392,10 @@ console.log(response);
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
 
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -437,7 +426,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -491,12 +480,10 @@ console.log(response);
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
 
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -528,7 +515,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -562,7 +549,7 @@ console.log(response);
         return;
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -588,7 +575,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -629,7 +616,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -665,7 +652,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -713,7 +700,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -752,7 +739,7 @@ console.log(response);
 
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -780,7 +767,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -826,7 +813,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -893,12 +880,10 @@ console.log(response);
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
 
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -935,7 +920,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -985,7 +970,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -1090,12 +1075,10 @@ console.log(response);
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
 
         }).catch(function(response) {
-console.log(response);
+            console.log(response);
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -1122,7 +1105,7 @@ console.log(response);
         return;
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -1160,7 +1143,7 @@ console.log(response);
         }
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -1193,7 +1176,7 @@ console.log(response);
 
 
     }).catch(function(response) {
-console.log(response);
+        console.log(response);
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -1378,10 +1361,7 @@ console.log(response);
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
-
         }).catch(function(response) {
 
             showAlert('danger!', 'Some error occured. Please try again.');
@@ -1484,8 +1464,6 @@ console.log(response);
 
             }
             if (status == 'danger') {
-                showAlert(status, message);
-            } else {
                 showAlert(status, message);
             }
 
@@ -1768,10 +1746,7 @@ console.log(response);
             }
             if (status == 'danger') {
                 showAlert(status, message);
-            } else {
-                showAlert(status, message);
             }
-
         }).catch(function(response) {
 
             showAlert('danger!', 'Some error occured. Please try again.');
