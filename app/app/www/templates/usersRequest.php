@@ -19,12 +19,7 @@
 					 			</label>
 				 </ion-list>
 	<div ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="myCalendar">
-	
-
-					
-
-
-            <button id="register-button3" class="button button-royal  button-block">Request</button>
+<button id="passwordSettings-button10" class="button button-royal  button-block">Request</button>
         </form>
 
       
