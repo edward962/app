@@ -942,6 +942,7 @@ angular.module('app.controllers', [])
 
 })
 
+
 .controller('usersRequestCtrl', function($scope, $state, $stateParams, $ionicPopup, $timeout, $http) {
 
     //popup alert starts here
@@ -970,7 +971,7 @@ angular.module('app.controllers', [])
         }
 
     }).catch(function(response) {
-        console.log(response);
+
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
@@ -991,13 +992,66 @@ angular.module('app.controllers', [])
     $scope.params = $stateParams;
     //calendar
 
-    $scope.uiConfig = {
+    
+
+
+
+    ////////
+    
+    
+    var filtered;
+  
+  var url = 'http://fadedbarbershop.co.uk/rest-all.php/admin/requests_by_user_id/'+id;
+
+    $http.get(url).then(function(response) 
+        {
+        
+			    var requests = response.data;
+				filtered=requests;	     
+	
+			   
+	      
+				 //return filtered;
+				 
+				 
+				  //ui calendar
+  
+  /* config object */
+    var v_events=[];
+        
+//	if(filtered)
+//		{
+//		
+		console.log("WOWOWOWOWW");
+		//console.log(filtered);
+		
+		for (var b in filtered){
+			//console.log(filtered[b]);
+			filtered[b].backgroundColor='red';
+			//console.log(filtered[b]);
+		}
+		
+		
+		
+		    //      console.log($scope);
+				$scope.eventSources= filtered;
+                v_events=filtered;
+//				showAlert('success!','got data!');
+
+//		}
+//	else
+//		{
+//			showAlert('danger!','havent got any data!');
+//			
+//		}
+
+        $scope.uiConfig = {
         calendar: {
             height: 450,
             editable: true,
             selectable: true,
             selectHelper: true,
-
+            events:v_events,
             // function for storing event
             select: function(startD, endD, allDay) {
 
@@ -1030,9 +1084,17 @@ angular.module('app.controllers', [])
 
 
     };
-
-
-
+			
+        }).catch(function(response) 
+        {
+      
+          showAlert('danger!','Some error occured. Please try again.');
+        });
+    
+    ///////
+    
+    
+    
     $scope.eventSources = [];
 
 
@@ -1075,10 +1137,12 @@ angular.module('app.controllers', [])
             }
             if (status == 'danger') {
                 showAlert(status, message);
+            } else {
+                showAlert(status, message);
             }
 
         }).catch(function(response) {
-            console.log(response);
+
             showAlert('danger!', 'Some error occured. Please try again.');
         });
     }
@@ -1105,13 +1169,14 @@ angular.module('app.controllers', [])
         return;
 
     }).catch(function(response) {
-        console.log(response);
+
         showAlert('danger!', 'Some error occured. Please try again.');
     });
 
 
 
 })
+
 
 
 
