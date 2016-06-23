@@ -18,7 +18,7 @@
 				 						<input type="text" name="end" ng-model="end" id="end" value="" ng-readonly="true"></input>
 					 			</label>
 				 </ion-list>
-	<div ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="myCalendar">
+	<div ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="myCalendar"></div>
 	
 
 					
